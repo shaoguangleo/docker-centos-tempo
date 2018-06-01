@@ -18,6 +18,7 @@ RUN cd /tmp/\
     && cp -rv clock ephem tzpar util /usr/local/tempo \
     && cp tempo.hlp /usr/local/tempo \
     && cp obsys.dat /usr/local/tempo \
+    && source ~/.bashrc \
     && echo "export PATH=$PATH:/usr/local/tempo/bin" >> ~/.bashrc \
     && echo "export TEMPO=/usr/local/tempo" >> ~/.bashrc \
     && echo "export CLKDIR=/usr/local/tempo/clock" >> ~/.bashrc \
